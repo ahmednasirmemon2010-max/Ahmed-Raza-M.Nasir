@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONOS | Masterpieces of Time</title>
+
+    <meta name="description"
+        content="Discover CHRONOS, where luxury meets precision. Explore our exclusive collection of hand-crafted timepieces.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-logo">CHRONOS</div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Back to Top -->
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="particles"></div>
+
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">CHRONOS</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Heritage</a></li>
+            <li><a href="#masterpieces">Masterpieces</a></li>
+            <li><a href="#atelier">Atelier</a></li>
+            <li><a href="#compass">Compass</a></li>
+            <li><a href="#boutiques">Boutiques</a></li>
+            <li><a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1.5rem;">Join Club</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="currency-switcher">
+                <select id="currencySelect">
+                    <option value="USD">USD ($)</option>
+                    <option value="CHF">CHF (₣)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="GBP">GBP (£)</option>
+                </select>
+            </div>
+            <div class="lume-toggle" id="lumeToggle">
+                <i class="fas fa-eye"></i>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <!-- Hero Background Video -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-luxury-watch-spinning-on-a-stand-in-the-dark-32785-large.mp4"
+                type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Mastery <br>Of <span>Time</span></h1>
+            <p>Elevate your presence with timepieces that define generations. Engineering perfection, wearing elegance.
+            </p>
+            <div class="btn-container">
+                <a href="#products" class="btn btn-primary">Our Collection</a>
+                <a href="#about" class="btn btn-secondary">Heritage</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Chronos Luxury Watch">
+        </div>
+    </section>
+
+    <!-- Media Endorsements -->
+    <section class="media-logos reveal">
+        <a href="#" class="media-logo">FORBES</a>
+        <a href="#" class="media-logo">GQ MAGAZINE</a>
+        <a href="#" class="media-logo">VOGUE</a>
+        <a href="#" class="media-logo">TIMELESS</a>
+        <a href="#" class="media-logo">THE VERGE</a>
+    </section>
+
+    <section id="about" class="craftsmanship reveal">
+        <div class="craft-text">
+            <h2 style="font-size: 3rem; margin-bottom: 2rem;">The Art of <span>Perfection</span></h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Every Chronos timepiece is a testament to
+                hundred-year-old Swiss traditions blended with cutting-edge aerospace engineering. Our master
+                watchmakers spend over 400 hours on a single movement.</p>
+            <ul style="list-style: none; color: var(--text-primary);">
+                <li style="margin-bottom: 1rem;"><i class="fas fa-check"
+                        style="color: var(--accent-color); margin-right: 10px;"></i> Hand-Polished Grade 5 Titanium</li>
+                <li style="margin-bottom: 1rem;"><i class="fas fa-check"
+                        style="color: var(--accent-color); margin-right: 10px;"></i> In-House <span
+                        class="glossary-term" data-term="caliber">Caliber</span> 8900</li>
+                <li style="margin-bottom: 1rem;"><i class="fas fa-check"
+                        style="color: var(--accent-color); margin-right: 10px;"></i> Lifetime Warranty</li>
+            </ul>
+            <div class="founder-signature">Ahmed Raza</div>
+        </div>
+        <div class="craft-image">
+            <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Craftsmanship">
+        </div>
+    </section>
+
+    <!-- Anatomy of Precision (Interactive Hotspots) -->
+    <section id="anatomy" class="anatomy reveal">
+        <div class="section-title">
+            <h2>Anatomy of <span>Precision</span></h2>
+            <p>Explore the intricate details that make CHRONOS a legend in mastery.</p>
+        </div>
+        <div class="anatomy-container">
+            <img src="https://images.unsplash.com/photo-1622434641406-a15812345ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                alt="Chronos Anatomy">
+
+            <!-- Hotspot 1: Movement -->
+            <div class="hotspot" style="top: 20%; left: 30%;">
+                <div class="hotspot-label">
+                    <h4>The Caliber-8</h4>
+                    <p>Self-winding mechanical movement with bi-directional rotor and 72-hour anti-magnetic reserve.</p>
+                </div>
+            </div>
+
+            <!-- Hotspot 2: Bezel -->
+            <div class="hotspot" style="top: 45%; left: 70%;">
+                <div class="hotspot-label">
+                    <h4>Ceramic Bezel</h4>
+                    <p>Unidirectional rotating bezel crafted from heat-treated zirconium oxide for diamond-level
+                        hardness.</p>
+                </div>
+            </div>
+
+            <!-- Hotspot 3: Dial -->
+            <div class="hotspot" style="top: 55%; left: 45%;">
+                <div class="hotspot-label">
+                    <h4>Obsidian Dial</h4>
+                    <p>Hand-cut volcanic glass dial with applied 18k gold indices and <span class="glossary-term"
+                            data-term="lume"></span>Super-LumiNova®</span> coating.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section id="specifications" class="specs-section reveal">
+        <div class="section-title">
+            <h2>Technical <span>Manifesto</span></h2>
+            <p>The engineering truth behind the artistry.</p>
+        </div>
+        <div class="specs-grid">
+            <div class="specs-column">
+                <div class="spec-item">
+                    <span class="spec-label">Case Material</span>
+                    <span class="spec-value">Grade 5 Polished Titanium</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Movement</span>
+                    <span class="spec-value">Caliber-8 Automatic</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Power Reserve</span>
+                    <span class="spec-value">72 Hours (Anti-Magnetic)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Case Diameter</span>
+                    <span class="spec-value">42.5 mm</span>
+                </div>
+            </div>
+            <div class="specs-column">
+                <div class="spec-item">
+                    <span class="spec-label">Water Resistance</span>
+                    <span class="spec-value">30 ATM (300 Meters)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Crystal</span>
+                    <span class="spec-value">Double-Domed Sapphire</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Frequency</span>
+                    <span class="spec-value">28,800 Alt/h</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Jewels</span>
+                    <span class="spec-value">35 Synthetic Rubies</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features reveal">
+        <div class="feature-item">
+            <i class="fas fa-microchip"></i>
+            <h4>Swiss Precision</h4>
+            <p>Masterfully crafted movements with 72-hour reserve.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-gem"></i>
+            <h4>Pure Sapphire</h4>
+            <p>Scratch-resistant crystal for eternal clarity.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-water"></i>
+            <h4>Tidal Mastery</h4>
+            <p>Water resistant up to 300 meters for exploration.</p>
+        </div>
+    </section>
+
+    <section id="limited" class="countdown-section reveal">
+        <h2 style="font-family: 'Cinzel', serif; letter-spacing: 3px; margin-bottom: 1rem;">Limited Edition:
+            <span>AERO-01</span>
+        </h2>
+        <p style="color: var(--text-secondary);">Only 50 units remaining. Private launch window closing soon.</p>
+        <div class="countdown-container">
+            <div class="count-box">
+                <span id="days">00</span>
+                <label>Days</label>
+            </div>
+            <div class="count-box">
+                <span id="hours">00</span>
+                <label>Hours</label>
+            </div>
+            <div class="count-box">
+                <span id="mins">00</span>
+                <label>Mins</label>
+            </div>
+            <div class="count-box">
+                <span id="secs">00</span>
+                <label>Secs</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Scrollytelling Section -->
+    <section id="masterpieces" class="horizontal-scroll-wrapper">
+        <div class="horizontal-scroll-container">
+            <div class="scroll-panel">
+                <div class="panel-content">
+                    <h2>The <br><span>Obsidian</span> Series</h2>
+                    <p>Deep volcanic glass dials that reflect the soul of the earth. Extreme durability meets eternal
+                        elegance.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="panel-img" alt="Obsidian Watch">
+            </div>
+            <div class="scroll-panel">
+                <div class="panel-content">
+                    <h2>The <br><span>Aerospace</span> Grade</h2>
+                    <p>Crafted from Grade 5 titanium, the same alloy used in spacecraft. Light as air, stronger than
+                        steel.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="panel-img" alt="Titanium Watch">
+            </div>
+            <div class="scroll-panel">
+                <div class="panel-content">
+                    <h2>The <br><span>Legacy</span> Gold</h2>
+                    <p>18k hand-brushed gold that tells a story of success. A timepiece for those who lead.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="panel-img" alt="Gold Watch">
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products reveal">
+        <div class="section-title reveal">
+            <h2>The <span>Royal</span> Gallery</h2>
+            <p>Hand-assembled excellence for the modern connoisseur.</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card reveal">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Watch 1">
+                    <div class="magnifier"></div>
+                </div>
+                <h3>Vanguard Black</h3>
+                <div class="product-price" data-price="3200">$3,200</div>
+                <button class="buy-btn">Inquire Now</button>
+            </div>
+            <div class="product-card reveal">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Watch 2">
+                    <div class="magnifier"></div>
+                </div>
+                <h3>Royal Azure</h3>
+                <div class="product-price" data-price="5800">$5,800</div>
+                <button class="buy-btn">Inquire Now</button>
+            </div>
+            <div class="product-card reveal">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Watch 3">
+                    <div class="magnifier"></div>
+                </div>
+                <h3>Lunar Gold</h3>
+                <div class="product-price" data-price="9400">$9,400</div>
+                <button class="buy-btn">Inquire Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bespoke Atelier Section -->
+    <section id="atelier" class="bespoke-atelier reveal">
+        <div class="atelier-visual">
+            <img id="atelier-watch"
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Customizable Watch">
+        </div>
+        <div class="atelier-content">
+            <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Bespoke <span>Atelier</span></h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Personalize your timepiece. Select from our
+                signature finishes to create a watch that is uniquely yours.</p>
+            <div class="color-options">
+                <div class="color-dot gold active" data-color="gold"
+                    data-img="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                </div>
+                <div class="color-dot silver" data-color="silver"
+                    data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                </div>
+                <div class="color-dot rose" data-color="rose"
+                    data-img="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                </div>
+                <div class="color-dot stealth" data-color="stealth"
+                    data-img="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                </div>
+            </div>
+            <p id="atelier-status"
+                style="margin-top: 1.5rem; color: var(--accent-color); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">
+                Titanium Gold Finish Selected</p>
+        </div>
+    </section>
+
+    <!-- Comparison Compass Section -->
+    <section id="compass" class="comparison-compass reveal">
+        <div class="section-title">
+            <h2>The <span>Comparison</span> Compass</h2>
+            <p>Precise analysis for the discerning collector. Select two timepieces to evaluate technical
+                specifications.</p>
+        </div>
+
+        <div class="selector-grid">
+            <div class="selector-item" data-watch="vanguard" data-name="Vanguard Black" data-caliber="CALIBER X-90"
+                data-case="42MM BRUSHED TITANIUM" data-material="GRADE 5 TITANIUM" data-res="100M / 10 ATM"
+                data-img="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    alt="Vanguard">
+            </div>
+            <div class="selector-item" data-watch="royal" data-name="Royal Azure" data-caliber="CALIBER Y-50"
+                data-case="40MM POLISHED STEEL" data-material="OYSTERSTEEL 904L" data-res="200M / 20 ATM"
+                data-img="https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    alt="Royal">
+            </div>
+            <div class="selector-item" data-watch="lunar" data-name="Lunar Gold" data-caliber="CALIBER Z-10"
+                data-case="38MM FROSTED GOLD" data-material="18K CHRONO GOLD" data-res="50M / 5 ATM"
+                data-img="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    alt="Lunar">
+            </div>
+        </div>
+
+        <div class="compass-container">
+            <div class="compass-slot" id="slot-a">
+                <div class="placeholder"><i class="fas fa-plus"></i></div>
+                <img src="" alt="Slot A">
+                <h4 class="watch-name" style="margin-top: 1rem; color: var(--accent-color); font-size: 0.9rem;">SELECT
+                    WATCH</h4>
+            </div>
+            <div class="compass-slot" id="slot-b">
+                <div class="placeholder"><i class="fas fa-plus"></i></div>
+                <img src="" alt="Slot B">
+                <h4 class="watch-name" style="margin-top: 1rem; color: var(--accent-color); font-size: 0.9rem;">SELECT
+                    WATCH</h4>
+            </div>
+        </div>
+
+        <div class="comparison-data" id="comparison-data" style="margin-top: 4rem;">
+            <!-- Technical Data Injected by JS -->
+        </div>
+    </section>
+
+    <!-- Digital Ledger Section -->
+    <section id="ledger" class="ledger-section reveal">
+        <div class="ledger-visual">
+            <div class="ledger-card">
+                <div
+                    style="text-align: center; border-bottom: 1px solid var(--accent-color); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+                    <i class="fas fa-cube" style="font-size: 2rem; color: var(--accent-color);"></i>
+                    <h5 style="margin-top: 0.5rem; color: var(--text-primary);">Certificate X-900</h5>
+                </div>
+                <div style="font-size: 0.7rem; color: var(--text-secondary); line-height: 1.8;">
+                    <p>OWNER: MASTER CONNOISSEUR</p>
+                    <p>ID: 0x82f...a91</p>
+                    <p>MINTED: 30 JAN 2026</p>
+                    <p>STATUS: VERIFIED</p>
+                </div>
+                <div style="position: absolute; bottom: 2rem; left: 2rem; right: 2rem; text-align: center;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=CHRONOS-AUTH-001&color=d4af37&bgcolor=050505"
+                        style="width: 80px; border: 1px solid var(--accent-color); padding: 5px;" alt="QR Code">
+                </div>
+            </div>
+        </div>
+        <div class="ledger-content">
+            <span class="blockchain-badge">The Blockchain of Time</span>
+            <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Legacy <span>Immutable</span></h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px;">Every Chronos timepiece is
+                accompanied by a Digital Certificate of Authenticity anchored on the blockchain. A permanent,
+                tamper-proof record of your watch's origin, pedigree, and servicing history.</p>
+            <div style="display: flex; gap: 1rem;">
+                <button class="btn btn-primary" id="generateCert">Claim Digital Certificate</button>
+                <button class="btn btn-secondary">Verify on Node</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership-section reveal">
+        <div class="section-title">
+            <h2>The <span>Inner Circle</span></h2>
+            <p>Your key to the future of time. Accessible only to verified CHRONOS owners.</p>
+        </div>
+
+        <div class="card-flip-container">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-family: 'Cinzel'; font-size: 0.7rem; letter-spacing: 2px;">INNER CIRCLE</span>
+                        <i class="fas fa-wifi" style="transform: rotate(90deg); opacity: 0.5;"></i>
+                    </div>
+                    <div class="card-chip"></div>
+                    <div class="card-number">8800 4400 2200 1101</div>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div class="card-holder">MASTER COLLECTOR</div>
+                        <div style="text-align: right;">
+                            <span style="font-size: 0.5rem; opacity: 0.5;">VALID THRU</span>
+                            <div style="font-size: 0.7rem;">PERPETUAL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="font-weight: bold; font-size: 0.6rem;">CHRONOS SIGNATURE SERVICES</span>
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div style="background: #000; height: 40px; width: 100%; margin: 1rem 0;"></div>
+                    <div style="display: flex; gap: 1.5rem; align-items: center;">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=CHRONOS-VERIFIED&color=d4af37&bgcolor=000"
+                            class="card-qr" alt="QR">
+                        <div style="font-size: 0.6rem; line-height: 1.4;">
+                            <p>NON-TRANSFERABLE ACCESS</p>
+                            <p>GENEVA • NEW YORK • TOKYO</p>
+                            <p style="font-weight: 700; margin-top: 5px;">EST. 1926</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 2rem;">Hover the card to reveal the
+            encrypted security layer.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="access" class="services reveal">
+        <div class="section-title">
+            <h2>Luxury <span>Concierge</span> Services</h2>
+            <p>Our commitment to you transcends the initial purchase.</p>
+        </div>
+        <div class="service-grid">
+            <div class="service-card reveal">
+                <i class="fas fa-tools"></i>
+                <h3>Master Servicing</h3>
+                <p>Complimentary movement calibration and deep cleaning every five years.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Secure Logistics</h3>
+                <p>Fully insured, white-glove global delivery to your doorstep.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-handshake"></i>
+                <h3>Trade-In Program</h3>
+                <p>Upgrade your collection with our exclusive buy-back and exchange services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Timeline -->
+    <section id="timeline" class="timeline reveal">
+        <div class="section-title">
+            <h2>A Legacy of <span>Mastery</span></h2>
+            <p>A century of defying boundaries in horological engineering.</p>
+        </div>
+        <div class="timeline-items">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1924</h3>
+                    <h4>The Foundation</h4>
+                    <p>Founded in Geneva to create the world's most accurate astronomical timepieces.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1955</h3>
+                    <h4>Abyssal Explorer</h4>
+                    <p>Launch of our first diver's watch, certified for depths previously thought unreachable.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1982</h3>
+                    <h4>Volcanic Mastery</h4>
+                    <p>CHRONOS pioneers the use of obsidian dials, melding art with deep-earth resonance.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2026</h3>
+                    <h4>The Aero Era</h4>
+                    <p>The dawn of zero-gravity precision with the AERO-01 Limited Edition collection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geneva Masterclass Section -->
+    <section id="masterclass" class="masterclass reveal">
+        <div class="masterclass-banner">
+            <div class="banner-content">
+                <h2 style="font-size: 3.5rem; color: #fff; margin-bottom: 1.5rem;">The <span>Geneva</span> Masterclass
+                </h2>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 2.5rem;">An exclusive invitation for Inner Circle
+                    members. Join our master watchmakers for a private 48-hour workshop in the heart of Geneva. Learn
+                    the alchemy of mechanical movements.</p>
+                <button class="btn btn-primary">Register Interest</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unboxing Experience Section -->
+    <section id="unboxing" class="unboxing-experience reveal">
+        <div class="unboxing-content">
+            <h2>The <span>Arrival</span> Ritual</h2>
+            <p>Experience the moment of acquisition. Click the signature presentation box to reveal your masterpiece.
+            </p>
+        </div>
+        <div class="box-container" id="watchBox">
+            <div class="box-lid">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="box-base"></div>
+            <div style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); color: var(--accent-color); font-size: 0.6rem; font-weight: 700; opacity: 0.5; z-index: 5;"
+                class="serial-reveal">No. 08/50</div>
+            <img class="box-watch-reveal"
+                src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Revealed Watch">
+        </div>
+    </section>
+
+    <!-- Membership Promo -->
+    <section class="membership-promo reveal">
+        <div class="premium-card">
+            <div class="premium-card-inner">
+                <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Join the <span>Inner Circle</span></h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2.5rem; max-width: 600px; margin-inline: auto;">
+                    Gain access to private auctions, limited-run prototypes, and invitations to the Geneva Masterclass
+                    events.</p>
+                <a href="#contact" class="btn btn-primary">Apply for Membership</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collector's Testimonials -->
+    <section id="testimonials" class="testimonials reveal">
+        <div class="section-title">
+            <h2>The <span>Voices</span> of Collectors</h2>
+            <p>Reflections from those who have mastered the art of acquisition.</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>An absolute masterpiece of mechanical engineering. The Vanguard X-90 isn't just a watch; it's a
+                    statement of purpose. The finishing is beyond anything in my current collection.</p>
+                <div class="collector-info">
+                    <div class="collector-avatar">JR</div>
+                    <div>
+                        <h4 style="color: var(--accent-color);">Julian Ross</h4>
+                        <p style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase;">Aviation
+                            Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>The service at the Geneva flagship was unparalleled. Owning a Chronos is more than membership; it's
+                    an heirloom. The digital ledger gives me absolute peace of mind.</p>
+                <div class="collector-info">
+                    <div class="collector-avatar">ES</div>
+                    <div>
+                        <h4 style="color: var(--accent-color);">Elena Sofia</h4>
+                        <p style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase;">Art
+                            Curator</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>I chose the Stealth finish for my bespoke commission. The way the light play is captured on the matte
+                    titanium is truly revolutionary. High horology for the modern age.</p>
+                <div class="collector-info">
+                    <div class="collector-avatar">MK</div>
+                    <div>
+                        <h4 style="color: var(--accent-color);">Marcus Kane</h4>
+                        <p style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase;">Tech
+                            Visionary</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section id="boutiques" class="boutiques reveal">
+        <div class="section-title">
+            <h2>Global <span>Presence</span></h2>
+            <p>Visit our flagship boutiques in the world's most prestigious locations.</p>
+        </div>
+        <div class="boutique-grid">
+            <div class="boutique-item">
+                <h3>Geneva</h3>
+                <p>Rue du Rhône 62</p>
+                <div class="local-time" data-timezone="Europe/Zurich">00:00:00</div>
+            </div>
+            <div class="boutique-item">
+                <h3>Tokyo</h3>
+                <p>GInza 6-10-1</p>
+                <div class="local-time" data-timezone="Asia/Tokyo">00:00:00</div>
+            </div>
+            <div class="boutique-item">
+                <h3>New York</h3>
+                <p>Fifth Avenue 712</p>
+                <div class="local-time" data-timezone="America/New_York">00:00:00</div>
+            </div>
+            <div class="boutique-item">
+                <h3>London</h3>
+                <p>Bond Street 112</p>
+                <div class="local-time" data-timezone="Europe/London">00:00:00</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Newsletter Section -->
+    <section id="contact" class="newsletter reveal">
+        <h2>Join the <span>Chronos</span> Club</h2>
+        <p>Subscribe to receive exclusive previews of our upcoming limited edition collections.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Email for private access">
+            <button class="btn btn-primary">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Footer Refinement -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2 style="color: var(--accent-color);">CHRONOS</h2>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">Crafting the future of
+                    time through heritage, innovation, and an unwavering commitment to mechanical perfection since 1926.
+                </p>
+                <div class="social-links" style="margin-top: 2rem; display: flex; gap: 1rem;">
+                    <a href="#" style="color: var(--text-primary); font-size: 1.2rem;"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" style="color: var(--text-primary); font-size: 1.2rem;"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: var(--text-primary); font-size: 1.2rem;"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#masterpieces">Vanguard Series</a></li>
+                    <li><a href="#masterpieces">Royal Azure</a></li>
+                    <li><a href="#masterpieces">Lunar Gold</a></li>
+                    <li><a href="#atelier">Bespoke Atelier</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Maison</h4>
+                <ul>
+                    <li><a href="#about">Our Heritage</a></li>
+                    <li><a href="#anatomy">Craftsmanship</a></li>
+                    <li><a href="#ledger">Digital Ledger</a></li>
+                    <li><a href="#boutiques">Global Boutiques</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#concierge">Concierge</a></li>
+                    <li><a href="#access">Servicing</a></li>
+                    <li><a href="#membership">Ownership Registry</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Chronos Horology Maison. All Rights Reserved.</p>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#" style="color: var(--text-secondary);">Privacy Policy</a>
+                <a href="#" style="color: var(--text-secondary);">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Inquiry Modal -->
+    <div class="modal-overlay" id="productModal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center;">
+        <div class="modal-content"
+            style="background: #050505; border: 1px solid var(--accent-color); padding: 3rem; position: relative; max-width: 900px; width: 90%; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <span class="modal-close" id="modalClose"
+                style="position: absolute; top: 1rem; right: 1.5rem; font-size: 2rem; color: var(--accent-color); cursor: pointer;">&times;</span>
+            <div class="modal-left"
+                style="display: flex; align-items: center; justify-content: center; background: #000;">
+                <img id="modalImg" src="" alt="Product" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="modal-right">
+                <h2 id="modalTitle" style="font-family: 'Cinzel'; margin-bottom: 1rem;">Product Inquiry</h2>
+                <p id="modalDesc" style="color: var(--text-secondary); margin-bottom: 1.5rem;">Enter your details to
+                    receive a private quote and availability status from our concierge.</p>
+                <form
+                    onsubmit="event.preventDefault(); showToast('Inquiry Sent! Our concierge will contact you shortly.'); modal.style.display='none';">
+                    <input type="text" placeholder="Full Name" required
+                        style="width: 100%; padding: 0.8rem; background: var(--glass); border: 1px solid var(--glass-border); color: white; margin-bottom: 1rem; outline: none;">
+                    <input type="email" placeholder="Luxury Email Address" required
+                        style="width: 100%; padding: 0.8rem; background: var(--glass); border: 1px solid var(--glass-border); color: white; margin-bottom: 1.5rem; outline: none;">
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; border: none; cursor: pointer;">Request Private Quote</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Concierge Widget -->
+    <div class="concierge-widget" id="conciergeToggle"
+        style="position: fixed; bottom: 2rem; right: 2rem; background: var(--accent-color); color: #111; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; cursor: pointer; z-index: 1000; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <i class="fas fa-headset"></i>
+        <div class="concierge-badge"
+            style="position: absolute; top: -5px; right: -5px; background: #ff4d4d; color: white; font-size: 0.7rem; padding: 2px 6px; border-radius: 10px;">
+            1</div>
+    </div>
+
+    <div class="concierge-panel" id="conciergePanel"
+        style="position: fixed; bottom: 6rem; right: 2rem; width: 320px; background: #0a0a0a; border: 1px solid var(--glass-border); padding: 2rem; border-radius: 15px; visibility: hidden; opacity: 0; transform: translateY(20px); transition: all 0.4s ease; z-index: 1001;">
+        <h3 style="color: var(--accent-color); margin-bottom: 1rem; font-family: 'Cinzel';">Private Concierge</h3>
+        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Welcome back, Collector. How
+            may I assist with your acquisition today?</p>
+        <div style="border-top: 1px solid var(--glass-border); padding-top: 1rem;">
+            <button class="btn btn-primary"
+                style="width: 100%; border: none; font-size: 0.7rem; margin-bottom: 0.5rem;">Schedule Private
+                Viewing</button>
+            <button class="btn btn-secondary" style="width: 100%; font-size: 0.7rem;">Inquire about Bespoke
+                Atelier</button>
+        </div>
+    </div>
+
+    <div id="certModal" class="cert-modal">
+        <div class="certificate-paper">
+            <div class="certificate-border">
+                <h1>CHRONOS</h1>
+                <h2>MANUFACTURE D'HORLOGERIE</h2>
+                <div style="margin: 2rem 0; border-top: 1px solid #d4af37; width: 50%;"></div>
+                <div class="paper-content">
+                    <p>CERTIFICATE OF AUTHENTICITY</p>
+                    <p style="font-style: italic; margin: 1rem 0;">This document certifies that the timepiece</p>
+                    <h3 style="font-size: 1.5rem; letter-spacing: 5px; margin: 1.5rem 0;">VANGUARD X-90</h3>
+                    <p>SERIAL NO: <span style="font-weight: bold;">CR-2026-X90-08</span></p>
+                    <p style="margin-top: 2rem;">Is registered on the Chronos Immuable Ledger and belongs to the private
+                        collection of:</p>
+                    <h4 style="font-size: 1.2rem; color: #d4af37; margin: 1rem 0;">THE MASTER CONNOISSEUR</h4>
+                </div>
+                <div class="cert-seal">GENEVA<br>1926</div>
+                <button class="btn btn-secondary" id="closeCert"
+                    style="margin-top: 3rem; color: #111; border-color: #111;">Close Registry</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="glossaryPopup" class="glossary-popup">
+        <h4 id="glossaryTitle"></h4>
+        <p id="glossaryText"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
